@@ -1,5 +1,5 @@
-appUrl = 'https://basejump1-jondcoleman.c9.io/';
-ajaxFunctions = {
+var appUrl = 'https://basejump1-jondcoleman.c9.io/';
+var ajaxFunctions = {
    ready: function ready (fn) {
       if (typeof fn !== 'function') {
          return;

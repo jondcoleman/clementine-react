@@ -2,7 +2,7 @@
 
 (function () {
    
-   //var ajaxFunctions = require('../common/ajax-functions.js');
+   //require('../common/ajax-functions.js');
    
    var addButton = document.querySelector('.btn-add');
    var deleteButton = document.querySelector('.btn-delete');
