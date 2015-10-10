@@ -1,5 +1,5 @@
 'use strict';
-console.log(process.env.APP_URL);
+console.log(process.env.APP_URL + 'auth/github/callback/');
 module.exports = {
     'gitHubAuth': {
         'clientID': process.env.GITHUB_KEY,
