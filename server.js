@@ -12,7 +12,7 @@ require('dotenv').load();
 require('./app/config/passport')(passport);
 
 mongoose.connect('mongodb://localhost:27017/clementinejs');
-
+app.use('/common', express.static(process.cwd() + '/app/common'));
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
 
