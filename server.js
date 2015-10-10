@@ -11,7 +11,7 @@ var app = express();
 require('dotenv').load();
 require('./app/config/passport')(passport);
 
-mongoose.connect('mongodb://localhost:27017/clementinejs');
+mongoose.connect('mongodb://heroku_mcl5rfsj:6u3pk2h8045rn4blj4vsfoc7u0@ds035240.mongolab.com:35240/heroku_mcl5rfsj');
 app.use('/common', express.static(process.cwd() + '/app/common'));
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
