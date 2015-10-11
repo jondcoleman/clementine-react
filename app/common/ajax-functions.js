@@ -1,4 +1,3 @@
-var appUrl = 'https://whispering-ocean-6392.herokuapp.com/';
 var ajaxFunctions = {
    ready: function ready (fn) {
       if (typeof fn !== 'function') {

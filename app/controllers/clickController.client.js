@@ -1,9 +1,6 @@
 'use strict';
 
 (function () {
-   
-   //require('../common/ajax-functions.js');
-   
    var addButton = document.querySelector('.btn-add');
    var deleteButton = document.querySelector('.btn-delete');
    var clickNbr = document.querySelector('#click-nbr');
