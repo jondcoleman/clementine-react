@@ -25,6 +25,9 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.set('view engine', 'jade');
+app.set('views', './app/views');
+
 routes(app, passport);
 
 var port = 8080;
