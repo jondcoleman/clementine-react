@@ -15,6 +15,7 @@ mongoose.connect(process.env.DBURI);
 app.use('/common', express.static(process.cwd() + '/app/common'));
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
+app.use('/js', express.static(process.cwd() + '/app/js'));
 
 app.use(session({
     secret: 'secretClementine',
