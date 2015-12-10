@@ -30,7 +30,7 @@ app.set('views', './app/views');
 
 routes(app, passport);
 
-var port = 8080;
+var port = 3000;
 app.listen(process.env.PORT || port, function () {
     console.log('Node.js listening on port ' + port + '...');
 });
