@@ -3,8 +3,8 @@ var ReactDOM = require('react-dom');
 var Routes = require('./Routes');
 
 var ajax = require('./ajax-functions');
-var appUrl = 'http://localhost:3000/';
-var apiUrl = appUrl + 'api/:id';
+var appUrl = window.location.origin;
+var apiUrl = appUrl + '/api/:id';
 
 var App = React.createClass({
   getInitialState: function() {
