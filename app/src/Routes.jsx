@@ -18,7 +18,7 @@ module.exports = React.createClass({
 	render: function() {
 		return (
 			<Router>
-				<Route path="/" component={Main} onEnter={this.requireLogin}>
+				<Route path="/" component={Main} onEnter={this.requireLogin} user={this.props.user}>
 					<IndexRoute component={ClicksContainer}/>
 					<Route path="/Profile" component={Profile} user={this.props.user}/>
 				</Route>

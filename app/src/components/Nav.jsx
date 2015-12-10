@@ -8,7 +8,7 @@ module.exports = React.createClass({
 	render: function() {
 		return (
 			<header>
-				<p>Welcome, <span id="display-name"></span>!</p>
+				<p>Welcome, <span id="display-name">{this.props.user.displayName}</span>!</p>
 				<Link className="menu" to={"/"}>Home</Link>
 				<p>|</p>
 				<Link className="menu" to={"/profile"}>Profile</Link>
